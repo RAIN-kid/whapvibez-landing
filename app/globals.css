@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Hapa tunatengeneza rangi zetu za app ziweze kutumika kwenye code */
+  --color-primary: #dd2f2f;
+  --color-secondary: #fd6363;
+  --color-textLight: #FFFFFF;
+  --color-textMuted: #A098AE;
+}
+
+:root {
+  --background: #0A0510;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+}
+
+/* Scrollbar ya kijanja ya pink */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0510;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* Kuficha scrollbar kwenye simu yetu tutakayochonga */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
